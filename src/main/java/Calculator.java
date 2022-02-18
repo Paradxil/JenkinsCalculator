@@ -1,3 +1,6 @@
+import java.sql.Time;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 class Calculator {
 
@@ -72,8 +75,12 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
-
-        return null;
+        try {
+            TimeUnit.MICROSECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return n + System.currentTimeMillis();
     }
 
 
