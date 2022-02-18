@@ -39,7 +39,16 @@ class Calculator {
     etc
      */
     int fibonacciNumberFinder(int n){
-        return 0;
+        int n1 = 0;
+        int n2 = 1;
+
+        for(int i = 0; i < n; i++) {
+            int t = n1;
+            n1 = n2;
+            n2 = n1 + t;
+        }
+
+        return n1;
     }
 
 
@@ -51,6 +60,8 @@ class Calculator {
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
+
+
         return null;
     }
 
