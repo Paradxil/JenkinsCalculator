@@ -35,7 +35,6 @@ class Calculator {
     5 = 5
     .
     .
-    .
     etc
      */
     int fibonacciNumberFinder(int n){
