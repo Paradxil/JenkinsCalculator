@@ -111,7 +111,7 @@ public class CalculatorTest {
             uniqueIDBank.add(myCalculator.createUniqueID("CS204"));
         }
 
-        assertEquals(11 , uniqueIDBank.size());
+        assertEquals(10 , uniqueIDBank.size());
 
         for(String targetString:uniqueIDBank){
             assertTrue(targetString.contains("CS204"));
